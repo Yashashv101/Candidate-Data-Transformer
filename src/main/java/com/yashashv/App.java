@@ -1,32 +1,27 @@
 package com.yashashv;
 
-import com.yashashv.model.CanonicalRecord;
-import com.yashashv.model.SourceType;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yashashv.parser.*;
-
-import javax.xml.transform.Source;
+import com.yashashv.projection.Config;
 import java.io.IOException;
 import java.util.List;
 public class App 
 {
     public static void main( String[] args ) throws IOException {
-        String filePath = "";
-        SourceType sourceType = SourceDetector.detect(filePath);
-        Parser parser;
-        switch (type) {
-            case "CSV":
-                parser = new CsvParser();
-                break;
-            case "JSON":
-                parser = new JsonParser();
-                break;
-            case "TEXT":
-                parser = new TextParser();
-                break;
-            default:
-                throw new IllegalArgumentException("Unsupported File");
+        try {
+            List<String> inputFiles = List.of(
+                    "samples/recruiter.csv",
+                    "samples/candidate.json",
+                    "samples/notes.txt"
+            );
+            ObjectMapper mapper = new ObjectMapper();
+            Config config = mapper.readValue(new java.io.File("config.json"), Config.class);
+            Pipeline pipeline = new Pipeline();
+            pipeline.execute(inputFiles, config, "output.json");
+            System.out.println("Transformation completed successfully.");
+        } catch (Exception e) {
+            System.out.println("Transformation failed.");
+            e.printStackTrace();
         }
-        List<CanonicalRecord> records = parser.parse(filePath);
-
     }
 }
