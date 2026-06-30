@@ -1,10 +1,15 @@
 package com.yashashv.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.List;
 
 @NoArgsConstructor
+@Setter
+@Getter
 public class CanonicalRecord {
     private String fullName;
     private String headline;
