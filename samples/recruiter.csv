@@ -1,0 +1,4 @@
+full_name,email,phone,headline,location
+Alice Johnson,alice.johnson@email.com,9876543210,Senior Software Engineer,Bangalore
+Bob Smith,bob.smith@email.com,9123456789,Backend Developer,Mumbai
+Alice Johnson,alice.johnson@email.com,,Software Engineer,Bengaluru

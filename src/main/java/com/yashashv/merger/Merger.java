@@ -44,6 +44,7 @@ public class Merger {
             case CSV -> Constants.CSV_TRUST;
             case JSON -> Constants.JSON_TRUST;
             case TXT -> Constants.TXT_TRUST;
+            case PDF -> Constants.PDF_TRUST;
         };
     }
     private List<String> mergeEmails(List<CanonicalRecord> group) {

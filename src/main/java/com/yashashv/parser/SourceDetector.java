@@ -8,6 +8,7 @@ public class SourceDetector {
         if (file.endsWith(".csv")) return SourceType.CSV;
         if (file.endsWith(".json")) return SourceType.JSON;
         if (file.endsWith(".txt")) return SourceType.TXT;
+        if (file.endsWith(".pdf")) return SourceType.PDF;
         throw new IllegalArgumentException("Unsupported File Type");
     }
 }

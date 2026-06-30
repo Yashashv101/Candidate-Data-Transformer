@@ -1,0 +1,16 @@
+[
+  {
+    "full_name": "Alice Johnson",
+    "email": "alice.johnson@email.com",
+    "phone": "+919876543210",
+    "headline": "Senior Software Engineer at Infosys",
+    "location": "Bangalore, India"
+  },
+  {
+    "full_name": "Carol Williams",
+    "email": "carol.w@techcorp.com",
+    "phone": "8899001122",
+    "headline": "Data Scientist",
+    "location": "Hyderabad"
+  }
+]

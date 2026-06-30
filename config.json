@@ -1,0 +1,7 @@
+{
+  "fields": ["candidateId", "fullName", "headline", "location", "emails", "phones", "skills"],
+  "renameFields": {},
+  "includeConfidence": true,
+  "includeProvenance": true,
+  "onMissing": "omit"
+}

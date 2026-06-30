@@ -48,6 +48,7 @@ public class Pipeline {
             case CSV -> new CsvParser();
             case JSON -> new JsonParser();
             case TXT -> new TextParser();
+            case PDF -> new PdfParser();
         };
     }
 }

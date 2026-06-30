@@ -1,0 +1,11 @@
+{
+  "fields": ["candidateId", "fullName", "emails", "skills"],
+  "renameFields": {
+    "candidateId": "id",
+    "fullName": "name",
+    "emails": "contact_emails"
+  },
+  "includeConfidence": false,
+  "includeProvenance": false,
+  "onMissing": "omit"
+}

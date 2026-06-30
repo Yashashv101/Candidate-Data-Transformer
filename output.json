@@ -1,0 +1,21 @@
+[ {
+  "id" : "alice.johnson@email.com",
+  "name" : "Alice Johnson",
+  "contact_emails" : [ "alice.johnson@email.com" ],
+  "skills" : [ ]
+}, {
+  "id" : "bob.smith@email.com",
+  "name" : "Bob Smith",
+  "contact_emails" : [ "bob.smith@email.com" ],
+  "skills" : [ "java", "spring", "postgresql", "docker", "aws" ]
+}, {
+  "id" : "carol.w@techcorp.com",
+  "name" : "Carol Williams",
+  "contact_emails" : [ "carol.w@techcorp.com" ],
+  "skills" : [ ]
+}, {
+  "id" : "yashashvsinghxiia1397@gmail.com",
+  "name" : "Yashashv Singh",
+  "contact_emails" : [ "yashashvsinghxiia1397@gmail.com" ],
+  "skills" : [ "java", "python", "javascript", "react", "node", "express.js", "spring", "mongodb", "mysql", "postgresql", "redis", "rabbitmq", "git", "bash", "windows powershell", "docker", "data structures & algorithms", "rest apis", "oop", "operating systems", "computer networks", "agile development", "digital design" ]
+} ]

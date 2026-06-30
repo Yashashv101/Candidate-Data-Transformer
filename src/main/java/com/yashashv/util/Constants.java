@@ -5,4 +5,5 @@ public final class Constants {
     public static final double CSV_TRUST = 0.90;
     public static final double JSON_TRUST = 0.80;
     public static final double TXT_TRUST = 0.60;
+    public static final double PDF_TRUST = 0.65;
 }

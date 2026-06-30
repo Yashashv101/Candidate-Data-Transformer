@@ -1,5 +1,3 @@
 package com.yashashv.model;
 
-public class Education {
-
-}
+public record Education(String institution, String degree, String field, String endYear) {}
