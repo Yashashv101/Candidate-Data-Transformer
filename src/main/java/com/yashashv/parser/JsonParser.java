@@ -3,6 +3,8 @@ package com.yashashv.parser;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yashashv.model.CanonicalRecord;
+import com.yashashv.model.SourceType;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -21,6 +23,7 @@ public class JsonParser implements Parser{
             record.getPhones().add(node.path("phone").asText());
             record.setHeadline(node.path("headline").asText());
             record.setLocation(node.path("location").asText());
+            record.setSourceType(SourceType.JSON);
             records.add(record);
         }
         return records;

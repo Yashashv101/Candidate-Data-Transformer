@@ -1,11 +1,13 @@
 package com.yashashv.parser;
 
+import com.yashashv.model.SourceType;
+
 public class SourceDetector {
-    public static String detect(String filePath) {
+    public static SourceType detect(String filePath) {
         String file = filePath.toLowerCase();
-        if (file.endsWith(".csv")) return "CSV";
-        if (file.endsWith(".json")) return "JSON";
-        if (file.endsWith(".txt")) return "TEXT";
-        return "UNKNOWN";
+        if (file.endsWith(".csv")) return SourceType.CSV;
+        if (file.endsWith(".json")) return SourceType.JSON;
+        if (file.endsWith(".txt")) return SourceType.TXT;
+        throw new IllegalArgumentException("Unsupported File Type");
     }
 }

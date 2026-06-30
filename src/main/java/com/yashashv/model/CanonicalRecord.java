@@ -21,4 +21,6 @@ public class CanonicalRecord {
     private List<Education> education;
     private double confidence;
     private List<Provenance> provenance;
+    private SourceType sourceType;
+    private String candidateID;
 }

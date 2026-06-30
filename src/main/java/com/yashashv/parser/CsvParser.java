@@ -1,6 +1,7 @@
 package com.yashashv.parser;
 
 import com.yashashv.model.CanonicalRecord;
+import com.yashashv.model.SourceType;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
@@ -28,6 +29,7 @@ public class CsvParser implements Parser{
             record.getPhones().add(row.get("phone"));
             record.setHeadline(row.get("headline"));
             record.setLocation(row.get("location"));
+            record.setSourceType(SourceType.CSV);
             records.add(record);
         }
         parser.close();

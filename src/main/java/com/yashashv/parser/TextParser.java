@@ -1,6 +1,8 @@
 package com.yashashv.parser;
 
 import com.yashashv.model.CanonicalRecord;
+import com.yashashv.model.SourceType;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -19,6 +21,7 @@ public class TextParser implements Parser {
             else if (line.startsWith("Headline")) record.setHeadline(line.substring(8).trim());
             else if (line.startsWith("Location")) record.setLocation(line.substring(8).trim());
         }
+        record.setSourceType(SourceType.TXT);
         reader.close();
         return List.of(record);
     }

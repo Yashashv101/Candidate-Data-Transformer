@@ -10,6 +10,7 @@ public class DateNormalizer {
         if (date == null) return null;
         date = date.trim();
         if (date.isBlank()) return null;
+        if (date.equalsIgnoreCase("Present")||date.equalsIgnoreCase("Current")) return "Present";
         try {
             LocalDate d = LocalDate.parse(date);
             return YearMonth.from(d).toString();

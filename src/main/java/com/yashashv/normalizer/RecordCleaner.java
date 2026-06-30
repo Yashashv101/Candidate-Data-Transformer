@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 
 public class RecordCleaner {
-    public void clean(CanonicalRecord record) {
+    public CanonicalRecord clean(CanonicalRecord record) {
         for(int i=0;i<record.getEmails().size();i++){
             record.getEmails().set(i,EmailNormalizer.normalize(record.getEmails().get(i)));
         }
@@ -16,6 +16,7 @@ public class RecordCleaner {
             record.getSkills().set(i, SkillNormalizer.normalize(record.getSkills().get(i)));
         }
         cleanLists(record);
+        return record;
     }
     private void cleanLists(CanonicalRecord record) {
         record.getEmails().removeIf(email -> email == null || email.isBlank());
