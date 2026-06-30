@@ -1,6 +1,6 @@
 # Candidate Transformer
 
-**Demo video:** [](https://youtu.be/TODO) <!-- replace with your actual link -->
+**Demo video:** [https://www.youtube.com/watch?v=wKf7BFn4zfs](https://youtu.be/TODO) <!-- replace with your actual link -->
 
 
 Multi-source candidate data transformer for the Eightfold Engineering Intern assignment.
@@ -22,11 +22,11 @@ mvn clean package -DskipTests
 ```bash
 java -jar target/candidate-transformer-1.0-SNAPSHOT.jar
 ```
-This reads `config.json` and `samples/recruiter.csv`, `samples/candidate.json`, `samples/notes.txt`, and writes `output.json`.
+This reads `config.json` and `samples/recruiter.csv`, `samples/candidate.json`, `samples/notes.txt`, `samples/YashashvCV.pdf`, and writes `output.json`.
 
 ### Run with a custom config
 ```bash
-java -jar target/candidate-transformer-1.0-SNAPSHOT.jar custom_config.json samples/recruiter.csv samples/candidate.json samples/notes.txt
+java -jar target/candidate-transformer-1.0-SNAPSHOT.jar custom_config.json samples/recruiter.csv samples/candidate.json samples/notes.txt samples/YashashvCV.pdf
 ```
 
 ### Run tests
